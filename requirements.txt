@@ -1,0 +1,1 @@
+django-mptt-0.17.0 # if needed: used to store hierarchical data for nested categories
