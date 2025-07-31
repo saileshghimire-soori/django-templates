@@ -1,6 +1,7 @@
-from ..views import (  # CustomGenericUpdateView,
-    AccessToken,
-    APIView,
+from rest_framework.views import APIView
+from rest_framework_simplejwt.tokens import AccessToken, RefreshToken
+
+from ..views import (
     BaseAPIView,
     BaseModelViewSet,
     CustomAccessToken,

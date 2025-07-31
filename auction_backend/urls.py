@@ -4,6 +4,8 @@ from django.contrib import admin
 from django.urls import include, path, re_path
 from django.views.static import serve
 
+from .patterns import apipatterns, authpattern, schemapatterns
+
 urlpatterns = [
     path("admin/", admin.site.urls),  # disable this at production
     path("api/", include(apipatterns)),

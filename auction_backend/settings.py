@@ -10,6 +10,7 @@ THIRD_PARTY_APPS = [
     "django_user_agents",
     "rest_framework_simplejwt.token_blacklist",
     "mptt",
+    "debug_toolbar",
 ]
 
 if not SERVER_ENV:
@@ -19,7 +20,7 @@ if not SERVER_ENV:
 
     THIRD_PARTY_APPS.extend(SIDE_CAR_APPS)
 
-LOCAL_APPS = ['apps.api_logs', "apps.base", "apps.core_app", "apps.authentication"]
+LOCAL_APPS = ["apps.api_logs", "apps.base", "apps.core_app", "apps.authentication"]
 # Application definition
 
 INSTALLED_APPS = [
